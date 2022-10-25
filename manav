@@ -1,0 +1,54 @@
+public class Manav {
+    public static void main(String[] args) {
+
+        //Armut : 2,14 TL
+        //Elma : 3,67 TL
+        //Domates : 1,11 TL
+        //Muz: 0,95 TL
+        //Patlıcan : 5,00 TL
+
+        //Armut Kaç Kilo ? :0
+        //Elma Kaç Kilo ? :1
+        //Domates Kaç Kilo ? :1
+        //Muz Kaç Kilo ? :2
+        //Patlıcan Kaç Kilo ? :3
+        //Toplam Tutar : 21.68 TL
+
+        double armut,elma,domates,muz,patlican,toplamTutar;
+         armut =2.14 ;
+        elma = 3.67 ;
+        domates = 1.11  ;
+        muz= 0.95  ;
+        patlican=5.0;
+
+        double armutk ,
+        elmak ,
+        domatesk ,
+        muzk,
+        patlicank ;
+
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Armut Kaç Kilo: ");
+        armutk= scan.nextDouble();
+
+        Scanner scan2 = new Scanner(System.in);
+        System.out.print("Elma Kaç Kilo :");
+        elmak= scan2.nextDouble();
+
+        Scanner scan3 = new Scanner(System.in);
+        System.out.print("Domates Kaç Kilo :");
+        domatesk= scan3.nextDouble();
+
+        Scanner scan4 = new Scanner(System.in);
+        System.out.print("Muz Kaç Kilo :");
+        muzk= scan4.nextDouble();
+
+        Scanner scan5 = new Scanner(System.in);
+        System.out.print("Patlıcan Kaç Kilo :");
+        patlicank= scan5.nextDouble();
+
+        toplamTutar= (armut*armutk)+(patlicank*patlican)+(muz*muzk)+(domatesk*domates)+(elma*elmak);
+         System.out.print("ToplamTutar " + toplamTutar + " TL");
+    }
+}
